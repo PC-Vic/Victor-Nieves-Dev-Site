@@ -1,15 +1,18 @@
+import { useState } from 'react'
+import Home from './components/Home.jsx'
+import Navbar from './components/Navbar.jsx'
 import './index.css'
-import Navbar from './components/navbar.jsx'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-function App() {
+const App = () => {
 
   return (
     <div className="App">
       <Navbar />
-      <FontAwesomeIcon/>
-       </div>
-  )}
+      <Home />
+      <About />
+    </div>
+  )
 
-export default App
+}
+
+export default App;

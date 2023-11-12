@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  background-color: rgb(20, 20, 20);
+  color: rgb(182, 182, 182);
+}
+
+body, html {
+  color:  rgb(182, 182, 182);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Navbar on the left side of page */
+.navbar {
+  padding: 4px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  max-width: 100px; 
+  height: 100vh; 
+  margin: 0;
+  border-right: 1px solid transparent; 
+  border-image: linear-gradient(to bottom, #87CEFA, rgba(255, 255, 255, 0)) 1 100%;
+  border-image-slice: 1;
+  transition: border-right-color 0.3s ease;
+}
+
+.navbar h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 20px;
+  margin-bottom: 200px;
+}
+
+/* Navbar links */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%; 
+}
+
+
+.sidebar-links a {
+  text-decoration: none;
+  padding: 6px;
+  color: #c7c7c7;
+}
+
+.sidebar-links a:hover {
+  border-radius: 10px;
+  font-weight: bolder;
+  transition: all 0.2s ease 0s;
+  box-shadow: #f2f2f2 0px 0px 80px;
+  font-weight: bolder;
+  transform: scale(1.1);
+}
+
+/* Home page */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-right: 900px;
+}
+
+.home {
+  text-align: center; 
+  position: relative; top: -700px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: xx-large;
+}
+
+
+.projects-btn {
+  margin-top: 40px;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 12px 20px;
+  margin-right: 290px;
+  transition: all 0.4s ease 0s;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: glowAnimation 1s infinite alternate; 
+}
+
+.projects-btn:hover {
+  background-color: rgb(54, 54, 228);
+  box-shadow: #f2f2f2 0px 0px 3px;
+  font-weight: bolder;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@keyframes glowAnimation {
+  from {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  to {
+    text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+  }
+}
