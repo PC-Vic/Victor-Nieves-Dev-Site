@@ -113,3 +113,13 @@ body, html {
     text-shadow: 0 0 50px rgba(255, 255, 255, 1);
   }
 }
+
+/* About page */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-right: 900px;
+  color:aqua;
+}

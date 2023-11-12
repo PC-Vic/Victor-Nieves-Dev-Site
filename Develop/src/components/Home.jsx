@@ -1,4 +1,5 @@
-
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -10,7 +11,9 @@ const Home = () => {
                     <h1>MY NAME IS</h1>
                     <h1>VICTOR</h1>
                 </div>
-                <button className="projects-btn">PROJECTS</button>
+                <Link to="/projects">
+                    <button className="projects-btn">PROJECTS</button>
+                </Link>
             </div>
         </div>
     );
