@@ -87,6 +87,68 @@ body, html {
   font-size: xx-large;
 }
 
+/* shapes home page */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the image */
+.round-shapes {
+  position: fixed;
+  right: 60px;
+  top: 10px;
+  width: 1000px; /* Adjust the image size */
+  animation: spin 64s linear; /* Apply the clockwise spin animation */
+}
+
+
+/* Animate Hello */
+.animate-hello {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; 
+  animation-duration: 2s; 
+}
+
+/* Animate My Name is */
+.animate-my-name {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: flipinX; 
+  animation-duration: 2s; 
+}
+
+/* Define the @keyframes rule for flipinX */
+@keyframes flipinX {
+  from {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the .animate-my-name class */
+.animate-my-name {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: flipinX 1s ease-out; /* Specify the animation name, duration, and timing function */
+}
+
+.animate-vic {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: flipinX 3s ease-out; /* Specify the animation name, duration, and timing function */
+}
+
 
 .projects-btn {
   margin-top: 40px;
@@ -131,10 +193,9 @@ body, html {
   border-radius: 10px;
   font-weight: bolder;
   transition: all 0.2s ease 0s;
-  box-shadow: #f2f2f2 0px 0px 80px;
+  box-shadow: rgb(54, 54, 228) 0px 0px 20px;
   font-weight: bolder;
   transform: scale(1.1);
-  color: rgb(54, 54, 228);
 }
 
 /* About page */
