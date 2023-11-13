@@ -17,7 +17,7 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic, you can send the data to a server or perform other actions
+    
     console.log('Form data submitted:', formInfo);
 };
 
@@ -55,7 +55,7 @@ return (
             value={formInfo.message}
             onChange={handleChange}
             placeholder="Your Message"
-            rows="4" // Adjust the number of rows based on your design
+            rows="4" 
         />
         </div>
         <button type="submit">Submit</button>

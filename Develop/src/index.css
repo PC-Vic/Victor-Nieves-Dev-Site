@@ -31,9 +31,9 @@ body, html {
   transition: border-right-color 0.3s ease;
 }
 
-.navbar h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.logo {
+  width: 100%;
+  height: auto;
   margin-right: 20px;
   margin-bottom: 200px;
 }
@@ -43,7 +43,9 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 30%; 
+  align-items: center;
+  height: 25%; 
+  margin-bottom: 50px;
 }
 
 
@@ -114,6 +116,27 @@ body, html {
   }
 }
 
+/* nav icons */
+.nav-icons-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-bottom: -124px;
+  font-size: 2rem;
+  justify-content: space-between;
+  height: 12%;
+}
+
+.nav-icons-container a:hover {
+  border-radius: 10px;
+  font-weight: bolder;
+  transition: all 0.2s ease 0s;
+  box-shadow: #f2f2f2 0px 0px 80px;
+  font-weight: bolder;
+  transform: scale(1.1);
+  color: rgb(54, 54, 228);
+}
+
 /* About page */
 .about-container {
   display: flex;
@@ -121,5 +144,4 @@ body, html {
   justify-content: center;
   height: 100%;
   padding-right: 900px;
-  color:aqua;
 }
