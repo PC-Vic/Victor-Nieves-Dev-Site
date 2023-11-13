@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate()
 
     return (  
         <div className="home-container">
@@ -11,9 +12,7 @@ const Home = () => {
                     <h1>MY NAME IS</h1>
                     <h1>VICTOR</h1>
                 </div>
-                <Link to="/projects">
-                    <button className="projects-btn">PROJECTS</button>
-                </Link>
+                    <button className="projects-btn" onClick={() => { navigate('/projects')}}>PROJECTS</button>
             </div>
         </div>
     );
