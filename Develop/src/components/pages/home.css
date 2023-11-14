@@ -1,0 +1,123 @@
+/* Home page */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 900px;
+  }
+  
+  .home {
+    text-align: center; 
+    position: relative; top: -700px;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: xx-large;
+  }
+  
+  /* shapes home page */
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Large image animation */
+  .round-shapes {
+    position: fixed;
+    right: 40px;
+    top: 10px;
+    width: 1000px; 
+    animation: spin 16s cubic-bezier(0.4, 0, 0.2, 1); /* Apply the clockwise spin animation */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /* Animate Hello */
+  .animate-hello {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce; 
+    animation-duration: 2s; 
+  }
+  
+  /* Animate My Name is */
+  .animate-my-name {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: flipinX; 
+    animation-duration: 2s; 
+  }
+  
+  /* Define the @keyframes rule for flipinX */
+  @keyframes flipinX {
+    from {
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: perspective(400px) rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the .animate-my-name class */
+  .animate-my-name {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: flipInX 1s ease-out; /* Specify the animation name, duration, and timing function */
+  }
+  
+  .animate-vic {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: flipInX 3s ease-out; /* Specify the animation name, duration, and timing function */
+  }
+  
+  
+  .projects-btn {
+    margin-top: 40px;
+    border-radius: 20px;
+    font-weight: 800;
+    padding: 12px 20px;
+    margin-right: 290px;
+    transition: all 0.4s ease 0s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glowAnimation 1s infinite alternate; 
+    background-color: rgb(10, 10, 10);
+  }
+  
+  .projects-btn:hover {
+    background-color: rgb(54, 54, 228);
+    box-shadow: #f2f2f2 0px 0px 3px;
+    font-weight: bolder;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  @keyframes glowAnimation {
+    from {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+    to {
+      text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+    }
+  }

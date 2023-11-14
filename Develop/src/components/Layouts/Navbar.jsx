@@ -1,18 +1,20 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { icon } from '@fortawesome/free-solid-svg-icons/import.macro'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Logo from '../assets/nameLogo.png';
+import Logo from '../../assets/nameLogo.png';
 import { Link } from "react-router-dom";
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Navbar = () => {
     const gitHubLink = "https://github.com/PC-Vic";
+    const navigate = useNavigate()
 
     return (
         <nav className="navbar">
-            <img src={Logo} alt="logo" className="logo" />
+            <img onClick={() => {navigate('/')}} src={Logo} alt="logo" className="logo" />
             <div className="sidebar-links">
                 <Link to="/about" className="home-link">ABOUT</Link>
                 <Link to="/projects" className="forum-link">PROJECTS</Link>

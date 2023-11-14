@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'animate.css';
-import Shape from '../assets/roundShapes.png';
+import Shape from '../../assets/roundShapes.png';
 
 
 const Home = () => {

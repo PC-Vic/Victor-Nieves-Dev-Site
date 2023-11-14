@@ -1,0 +1,71 @@
+/* Navbar on the left side of page */
+.navbar {
+    padding: 4px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    max-width: 100px; 
+    height: 100vh; 
+    margin: 0;
+    border-right: 1px solid transparent; 
+    border-image: linear-gradient(to bottom, #87CEFA, rgba(255, 255, 255, 0)) 1 100%;
+    border-image-slice: 1;
+    transition: border-right-color 0.3s ease;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 200px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* Navbar links */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%; 
+    margin-bottom: 50px;
+}
+
+
+.sidebar-links a {
+    text-decoration: none;
+    padding: 6px;
+    color: #c7c7c7;
+}
+
+.sidebar-links a:hover {
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: all 0.2s ease 0s;
+    box-shadow: #f2f2f2 0px 0px 80px;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+/* nav icons */
+.nav-icons-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-bottom: -124px;
+    font-size: 2rem;
+    justify-content: space-between;
+    height: 12%;
+}
+
+.nav-icons-container a:hover {
+    border-radius: 10px;
+    font-weight: bolder;
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(54, 54, 228) 0px 0px 20px;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
