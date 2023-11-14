@@ -16,3 +16,10 @@ body, html {
   overflow: hidden;
 }
 
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-right: 900px;
+}
