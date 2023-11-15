@@ -1,5 +1,5 @@
+import {createBrowserRouter, RouterProvider, createRoutesFromElements, Route} from "react-router-dom";
 import ReactDOM from 'react-dom/client'
-import {createBrowserRouter, RouterProvider, BrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
 import './components/Layouts/layouts.css'
