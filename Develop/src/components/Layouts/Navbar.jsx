@@ -17,7 +17,6 @@ const Navbar = () => {
                 <Link to="/about" className="home-link">ABOUT</Link>
                 <Link to="/projects" className="forum-link">PROJECTS</Link>
                 <Link to="/contact" className="users-link">CONTACT</Link>
-                <Link to="/contact" className="users-link">CONTACT</Link>
             </div>
 
             <div className='nav-icons-container'>
