@@ -34,9 +34,7 @@ Welcome to my Full Stack Engineer portfolio! This project is built using React a
 
 ### 4. Contact
 
-- The Contact section allows visitors to get in touch with me. It includes:
-  - **Email:** your.email@example.com
-  - **GitHub:** [YourGitHubUsername](https://github.com/YourGitHubUsername)
+- The Contact section allows visitors to get in touch with me by filling out a form.
 
 #### Screenshots
 
