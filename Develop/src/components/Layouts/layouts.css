@@ -1,6 +1,6 @@
 /* Navbar on the left side of page */
 .navbar {
-    padding: 4px;
+    padding: 16px;
     display: flex;
     flex-direction: column; 
     align-items: flex-start; 

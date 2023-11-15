@@ -1,5 +1,3 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { icon } from '@fortawesome/free-solid-svg-icons/import.macro'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from '../../assets/nameLogo.png';
 import { Link } from "react-router-dom";
@@ -18,6 +16,7 @@ const Navbar = () => {
             <div className="sidebar-links">
                 <Link to="/about" className="home-link">ABOUT</Link>
                 <Link to="/projects" className="forum-link">PROJECTS</Link>
+                <Link to="/contact" className="users-link">CONTACT</Link>
                 <Link to="/contact" className="users-link">CONTACT</Link>
             </div>
 

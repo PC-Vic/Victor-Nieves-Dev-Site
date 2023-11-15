@@ -12,39 +12,13 @@ import Projects from './components/pages/Projects.jsx'
 import Contact from './components/pages/Contact.jsx'
 
 
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//     children: [
-//       {
-//         index: true,
-//         element: <Home />,
-//       },
-//       {
-//         path: "about",
-//         element: <About />,
-//       },
-//       {
-//         path: "projects",
-//         element: <Projects />,
-//       },
-//       {
-//         path: "contact",
-//         element: <Contact />,
-//       },
-      
-//     ],
-//   },
-// ]);
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='*' element={<App />}>
       <Route index element={<Home />} />  
       <Route path='about' element={<About />} />
       <Route path='projects' element={<Projects />} />
-      <Route path='contacts' element={<Contact/>}/>
+      <Route path='contact' element={<Contact />}/>
       </Route>
   )
 )
@@ -52,11 +26,3 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <BrowserRouter>
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-//   </BrowserRouter>
-// )
