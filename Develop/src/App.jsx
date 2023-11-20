@@ -11,15 +11,6 @@ const App = () => {
     <div style={{display: 'flex', alignItems:'center'}}>
       <Navbar />
       <Outlet />
-
-{/* <RouteContainer>
-  <Route path="/" element={<Home />} />
-  <Route path="about" element={<About />} />
-  <Route path="projects" element={<Projects />} />
-  <Route path='contact' element={<Contact />} />
-</RouteContainer> */}
-
-
     </div>
   );
 };
