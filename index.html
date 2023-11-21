@@ -1,10 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./Develop/src/index.css" />
     <link rel="stylesheet" href="./Develop/src/components/pages/home.css" />
-    <link rel="stylesheet" href="./Develop/src/components/Layouts/layouts.css" />
+    <link
+      rel="stylesheet"
+      href="./Develop/src/components/Layouts/layouts.css"
+    />
     <link rel="stylesheet" href="./Develop/src/components/pages/pages.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +15,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("EMAILJS_PUBLIC_KEY");
+      })();
+    </script>
     <script type="module" src="./Develop/src/main.jsx"></script>
   </body>
 </html>

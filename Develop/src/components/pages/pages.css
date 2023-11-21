@@ -7,13 +7,14 @@
     margin-right: 72px;
     animation: bounce;
     animation-duration: 2s;
+    border: 1px solid blue;
+    width: auto;
 }
 
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
     height: 100%;
     padding: 50px;
     width: 740px;
@@ -22,6 +23,12 @@
     margin-left: 440px;
     margin-bottom: 100px;
     justify-content: space-between;
+    border: 1px solid #811616;
+} 
+
+.about-container p {
+  font-size: 1.5rem;
+  border: 1px solid green;
 } 
 
 /* Projects page */
@@ -83,54 +90,7 @@
     text-shadow: 0 0 10px  rgb(54, 54, 228);
   }
 
-/* Contact page */
-/* .contact-container {
-  max-width: 600px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-textarea {
-  height: 120px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-button:hover {
-  background-color: #0056b3;
-} */
-
+  /* Contact page */
 .contact-container {
   max-width: 1200px;
   margin: auto;
@@ -159,7 +119,8 @@ textarea {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 8px;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  color:#fefefe;
 }
 
 textarea {
@@ -167,9 +128,10 @@ textarea {
 }
 
 button {
-  background-color: #007bff;
+  background-color: rgb(54, 54, 228);
   color: #fff;
   padding: 12px;
+  width: 188px;
   border: none;
   cursor: pointer;
   border-radius: 8px;
@@ -179,5 +141,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #3a88db;
 }

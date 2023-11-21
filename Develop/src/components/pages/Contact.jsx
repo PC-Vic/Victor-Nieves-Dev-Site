@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
+
   const [formInfo, setFormInfo] = useState({
     name: '',
     email: '',
@@ -47,17 +48,44 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate all fields before submitting
-    Object.keys(formInfo).forEach((name) => validateField(name, formInfo[name]));
+       // Validate all fields before submitting
+       Object.keys(formInfo).forEach((name) => validateField(name, formInfo[name]));
 
-    // Check if there are any errors
-    if (Object.values(errors).some((error) => error !== '')) {
-      console.log('Form submission failed. Please correct errors.');
-      return;
-    }
+       // Check if there are any errors
+       if (Object.values(errors).some((error) => error !== '')) {
+         console.log('Form submission failed. Please correct errors.');
+         return;
+       }
+   
+       // Proceed with form submission
+       console.log('Form data submitted:', formInfo);
 
-    // Proceed with form submission
-    console.log('Form data submitted:', formInfo);
+    // EmailJS service ID, template ID, and Public Key
+    const serviceID = 'service_95bbzmp';
+    const templateID = 'template_hlprn1x';
+    const publicKey = '373EmLEa4psxkPr3F';
+
+    // Object that contains template parameters for email
+    const templateParams = {
+      from_name: formInfo.name,
+      from_email: formInfo.email,
+      to_name: formInfo.name,
+      message: formInfo.message,
+    };
+
+    // Send email using EmailJS
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+    .then((response) => {
+      console.log('Email sent successfully!', response);
+      setFormInfo({
+        name: '',
+        email: '',
+        message: '',
+      });
+    })
+    .catch((error) => {
+      console.log('Email failed to send!', error);
+    });
   };
 
   return (
@@ -73,7 +101,7 @@ const Contact = () => {
             value={formInfo.name}
             onChange={handleChange}
             onBlur={handleBlur}
-            placeholder="Your Name"
+            placeholder="Name"
           />
           {errors.name && <span className="error-message">{errors.name}</span>}
         </div>
@@ -86,7 +114,7 @@ const Contact = () => {
             value={formInfo.email}
             onChange={handleChange}
             onBlur={handleBlur}
-            placeholder="Your Email"
+            placeholder="Email"
           />
           {errors.email && <span className="error-message">{errors.email}</span>}
         </div>
@@ -98,7 +126,7 @@ const Contact = () => {
             value={formInfo.message}
             onChange={handleChange}
             onBlur={handleBlur}
-            placeholder="Your Message"
+            placeholder="Message"
             rows="4"
           />
           {errors.message && <span className="error-message">{errors.message}</span>}
