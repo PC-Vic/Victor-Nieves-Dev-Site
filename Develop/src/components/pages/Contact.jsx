@@ -25,15 +25,15 @@ const Contact = () => {
   const validateField = (name, value) => {
     switch (name) {
       case 'name':
-        setErrors((prevErrors) => ({ ...prevErrors, name: value ? '' : 'Name is required' }));
+        setErrors((prevErrors) => ({ ...prevErrors, name: value ? '' : 'Name required' }));
         break;
       case 'email':
         // Basic email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        setErrors((prevErrors) => ({ ...prevErrors, email: emailRegex.test(value) ? '' : 'Invalid email address' }));
+        setErrors((prevErrors) => ({ ...prevErrors, email: emailRegex.test(value) ? '' : 'Invalid email' }));
         break;
       case 'message':
-        setErrors((prevErrors) => ({ ...prevErrors, message: value ? '' : 'Message is required' }));
+        setErrors((prevErrors) => ({ ...prevErrors, message: value ? '' : 'Required' }));
         break;
       default:
         break;
@@ -82,6 +82,7 @@ const Contact = () => {
         email: '',
         message: '',
       });
+      window.alert('Thank you for reaching out! I will contact you shortly.');
     })
     .catch((error) => {
       console.log('Email failed to send!', error);

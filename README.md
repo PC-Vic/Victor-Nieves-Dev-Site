@@ -53,7 +53,7 @@ Here are some screenshots of Calorie Quest in action:
 
 If you have any questions, suggestions, or feedback regarding the Coding Quiz Challenge!, please feel free to contact me:
 
-- Email: nievesvic86@gmail.com
+- Email: victordev@vicnieves.com
 - GitHub: PC-Vic https://github.com/PC-Vic/JavaScript-Quiz-app
 
 ## Link to app and GitHub
