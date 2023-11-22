@@ -7,7 +7,6 @@
     margin-right: 72px;
     animation: bounce;
     animation-duration: 2s;
-    border: 1px solid blue;
     width: auto;
 }
 
@@ -23,12 +22,10 @@
     margin-left: 440px;
     margin-bottom: 100px;
     justify-content: space-between;
-    border: 1px solid #811616;
 } 
 
 .about-container p {
   font-size: 1.5rem;
-  border: 1px solid green;
 } 
 
 /* Projects page */
