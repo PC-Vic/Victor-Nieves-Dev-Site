@@ -78,7 +78,6 @@
   
   .project-card:hover {
     transform: scale(1.1);
-    /* opacity: 0.1; */
   }
   
   .project-card:hover .project-title {

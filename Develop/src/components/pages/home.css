@@ -4,13 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* /* padding-right: 900px; */
   }
-  
-  /* .home {
-    text-align: center; 
-    position: relative; top: -700px;
-  } */
   
   .text-container {
     display: flex;
@@ -65,12 +59,12 @@
   .animate-my-name {
     display: inline-block;
     margin: 0 0.5rem;
-    animation: flipinX; 
+    animation: flipInX; 
     animation-duration: 2s; 
   }
   
   /* Define the @keyframes rule for flipinX */
-  @keyframes flipinX {
+  @keyframes flipInX {
     from {
       transform: perspective(400px) rotateX(90deg);
       opacity: 0;
