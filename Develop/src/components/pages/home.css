@@ -12,9 +12,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
-    font-size: 2.6rem;
+    font-size: 2.0rem;
     margin-bottom: 140px; 
-    margin-left: 160px;
+    margin-left: 128px;
   } 
 
   
@@ -31,9 +31,9 @@
   /* Large image animation */
   .round-shapes {
     position: fixed;
-    right: 60px;
-    top: 40px; 
-    width: 1100px; 
+    right: 48px;
+    top: 32px; 
+    width: 880px; 
     animation: spin 16s cubic-bezier(0.4, 0, 0.2, 1); /* Apply the clockwise spin animation */
   }
   
@@ -90,12 +90,13 @@
   
   
   .projects-btn {
-    margin-top: 40px;
-    border-radius: 20px;
-    font-weight: 800;
-    font-size: 1.3rem;
-    padding: 12px 20px;
-    margin-right: 290px;
+    margin-top: 32px;
+    border-radius: 16px;
+    font-weight: 640;
+    font-size: 1.2rem;
+    width: 136px;
+    padding: 10px 12px;
+    margin-right: 228px;
     transition: all 0.4s ease 0s;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     animation: glowAnimation 1s infinite alternate; 
