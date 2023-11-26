@@ -71,3 +71,14 @@
     font-weight: bolder;
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 812px) {
+    .navbar {
+        display: none;
+    }
+    .home-container {
+    margin-top: 400px;
+    justify-content: center;
+    align-items: center;
+    }
+}
