@@ -50,6 +50,7 @@ const Contact = () => {
 
        // Validate all fields before submitting
        Object.keys(formInfo).forEach((name) => validateField(name, formInfo[name]));
+       Object.keys(formInfo).forEach((email) => validateField(email, formInfo[email])); // added to test email validation
 
        // Check if there are any errors
        if (Object.values(errors).some((error) => error !== '')) {
@@ -71,6 +72,7 @@ const Contact = () => {
       from_email: formInfo.email,
       to_name: formInfo.name,
       message: formInfo.message,
+      reply_to: formInfo.email,
     };
 
     // Send email using EmailJS
