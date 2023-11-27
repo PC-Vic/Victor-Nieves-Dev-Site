@@ -8,6 +8,11 @@
   
   .hamburger-menu {
     display: none; /* Hide the menu by default */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
   }
   
   .hamburger-menu.open {
@@ -17,8 +22,8 @@
   .menu-items {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    background-color: #fff; /* Background color for the menu */
+    padding: 5px;
+    background-color: rgb(20, 20, 20); /* Background color for the menu */
     position: absolute;
     top: 60px; /* Adjust this based on your header height */
     right: 0;
@@ -30,19 +35,26 @@
     text-decoration: none;
     color: #c9c7c7;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     transition: color 0.3s ease-in-out;
   }
   
   .menu-items a:hover {
-    color: #ff5722; /* Change the color on hover */
+    color: rgb(107, 107, 248); /* Change the color on hover */
   }
+
+  /* Menu items */
+.menu-items-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 
   /* Media query for screens with a maximum width of 812px */
 @media screen and (max-width: 812px) {
     .hamburger-menu {
       display: block;
-        display: none; /* Hide the menu by default */
     }
   
     .menu-items {

@@ -1,34 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './HamburgerMenu.css';
 
 
 
 const HamburgerMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
-  
-    // Function to toggle the menu
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
-  
-    // Effect to hide the menu by default and show it at 812px
-    useEffect(() => {
-      const handleResize = () => {
-        setIsOpen(window.innerWidth >= 812);
-      };
-  
-      // Initial check on mount
-      handleResize();
-  
-      // Add event listener for window resize
-      window.addEventListener('resize', handleResize);
-  
-      // Cleanup the event listener on component unmount
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-  
+  const gitHubLink = "https://github.com/PC-Vic";
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Function to toggle the menu
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -39,11 +22,12 @@ const HamburgerMenu = () => {
 
       {/* Menu items */}
       <div className={`menu-items ${isOpen ? 'open' : ''}`}>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-        <a href="#">Github</a>
+        <div className="menu-items-background"></div>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+        <a href={gitHubLink} target="_blank">Github</a>
         <a href="#">LinkedIn</a>
       </div>
     </div>

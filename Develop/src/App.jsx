@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div style={{display: 'flex', alignItems:'center'}}>
       <Navbar />
-      <HamburgerMenu />
+      <HamburgerMenu /> 
       <Outlet />
     </div>
   );
