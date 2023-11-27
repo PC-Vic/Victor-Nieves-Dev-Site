@@ -137,7 +137,7 @@
   /* iphone 12pro */
   @media (max-width: 390px) {
     .text-container {
-      margin-right: 200px;
-      margin-bottom: 368px;
+      margin-left: 12px;
+      margin-top: -140px;
     }
   }
