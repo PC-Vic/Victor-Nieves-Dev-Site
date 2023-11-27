@@ -101,11 +101,12 @@
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     animation: glowAnimation 1s infinite alternate; 
     background-color: rgb(10, 10, 10);
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.8);
   }
   
   .projects-btn:hover {
-    background-color: rgb(54, 54, 228);
-    box-shadow: #f2f2f2 0px 0px 3px;
+    color: rgb(16, 16, 175);
+    box-shadow: #f2f2f2 0px 0px 5px;
     font-weight: bolder;
     transform: scale(1.1);
     cursor: pointer;
@@ -137,7 +138,7 @@
   /* iphone 12pro */
   @media (max-width: 480px) {
     .text-container {
-      margin-left: 12px;
-      margin-top: -140px;
+      margin-left: 24px;
+      margin-top: -180px;
     }
   }
