@@ -11,6 +11,7 @@ import Projects from './components/pages/Projects.jsx'
 import Contact from './components/pages/Contact.jsx'
 
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='*' element={<App />}>
