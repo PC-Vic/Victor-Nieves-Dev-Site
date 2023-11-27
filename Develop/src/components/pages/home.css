@@ -135,7 +135,7 @@
   }
 
   /* iphone 12pro */
-  @media (max-width: 390px) {
+  @media (max-width: 480px) {
     .text-container {
       margin-left: 12px;
       margin-top: -140px;
