@@ -133,3 +133,11 @@
       font-size: 1.9rem;
     }
   }
+
+  /* iphone 12pro */
+  @media (max-width: 390px) {
+    .text-container {
+      margin-right: 200px;
+      margin-bottom: 368px;
+    }
+  }
