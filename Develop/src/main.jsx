@@ -4,12 +4,13 @@ import App from './App.jsx'
 import './index.css'
 import './components/Layouts/layouts.css'
 import './components/pages/home.css'
-import './components/pages/pages.css'
+import './components/pages/about.css'
+import './components/pages/projects.css'
+import './components/pages/contact.css'
 import Home from './components/pages/Home.jsx'
 import About from './components/pages/About.jsx'
 import Projects from './components/pages/Projects.jsx'
 import Contact from './components/pages/Contact.jsx'
-
 
 
 const router = createBrowserRouter(
