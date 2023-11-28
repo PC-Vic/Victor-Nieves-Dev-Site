@@ -47,7 +47,9 @@
     justify-content: space-evenly;
     flex-shrink: 1;
     padding: 24px;
+    padding-left: 2px;
     width: 1400px;
+    border: 1px solid red;
   }
 
   .project-card {
@@ -143,7 +145,6 @@ button:hover {
   background-color: #3a88db;
 }
 
-/* Media queries About section */
 /* About large screens */
 @media (max-width: 1680px) {
   .about-me-heading {
@@ -154,6 +155,7 @@ button:hover {
   }
 }
 
+/* Media queries start here */
 /* About medium screens */
 @media (max-width: 1200px) {
   .about-me-heading {
@@ -199,4 +201,101 @@ button:hover {
     }
   }
 
+/* Projects large screens */
+@media (max-width: 1680px) {
+  .my-project-heading {
+    margin-left: 44px;
+  }
+  .projects-container {
+    margin-left: 44px;
+  }
+}
 
+/* 13" MacBook Pro */
+@media (max-width: 1440px) {
+  .my-project-heading {
+    margin-left: 44px;
+  }
+  .projects-container {
+    margin-left: 52px;
+    width: 80vw;
+  }
+  .project-card {
+    width: 304px;
+    height: 256px;
+  }
+}
+
+/* Small - Medium screens */
+@media (max-width: 934px) {
+  .my-project-heading {
+    margin-left: 44px;
+  }
+  .projects-container {
+    margin-left: 6px;
+    width: 90vw;
+  }
+  .project-card {
+    width: 236px;
+    height: 196px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 812px) {
+  .my-project-heading {
+    margin-top: 100px;
+    padding-top: 104px;
+  
+  }
+  .projects-container {
+    margin-left: 44px;
+    margin-top: 44px;
+    width: 90vw;
+   
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 812px) {
+  .my-project-heading {
+    margin-top: 100px;
+    padding-top: 104px;
+    margin-left: 10px;
+  
+  }
+  .projects-container {
+    margin-left: 20px;
+    margin-top: 44px;
+    width: 95vw;
+  }
+  .project-card {
+    width: 232px;
+    height: 192px;
+  }
+  .project-title {
+    font-size: 2.1rem;
+  }
+}
+
+/* iphone 14 Pro Max */
+@media (max-width: 430px) {
+  .my-project-heading {
+    margin-top: 100px;
+    padding-top: 104px;
+    margin-left: 10px;
+    font-size: 2.3rem;
+  }
+  .projects-container {
+    margin-left: 20px;
+    margin-top: 44px;
+    width: 100vw;
+  }
+  .project-card {
+    width: 140px;
+    height: 120px;
+  }
+  .project-title {
+    font-size: 1.7rem;
+  }
+}

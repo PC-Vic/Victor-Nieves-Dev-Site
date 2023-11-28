@@ -12,7 +12,6 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
-    /* transform: matrix(1, 0, 0, 1, 0, 0); */
   }
   
   .hamburger-menu.open {
@@ -49,7 +48,6 @@
   top: 0;
   left: 0;
 }
-
 
   /* Media query for screens with a maximum width of 812px */
 @media screen and (max-width: 812px) {
