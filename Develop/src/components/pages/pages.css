@@ -278,6 +278,29 @@ button:hover {
   }
 }
 
+/* Small iphone devices */
+@media (max-width: 635px) {
+  .my-project-heading {
+    margin-top: 100px;
+    padding-top: 104px;
+    margin-left: 10px;
+  
+  }
+  .projects-container {
+    margin-left: 20px;
+    margin-top: 44px;
+    width: 100vw;
+  }
+  .project-card {
+    width: 152px;
+    height: 132px;
+  }
+  .project-title {
+    font-size: 2.1rem;
+  }
+}
+
+
 /* iphone 14 Pro Max */
 @media (max-width: 430px) {
   .my-project-heading {
@@ -294,6 +317,32 @@ button:hover {
   .project-card {
     width: 140px;
     height: 120px;
+  }
+  .project-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* iphone 12 Pro Max */
+@media (max-width: 390px) {
+  .my-project-heading {
+    margin-top: 100px;
+    padding-top: 104px;
+    margin-left: 2px;
+    font-size: 2.1rem;
+    padding-bottom: 16px;
+  }
+  .projects-container {
+    margin-left: 4px;
+    margin-top: 44px;
+    width: 100vw;
+    padding-top: 0px;
+    margin-top: 2px;
+  }
+  .project-card {
+    width: 300px;
+    height: 80px;
+    margin: 8px;
   }
   .project-title {
     font-size: 1.7rem;
