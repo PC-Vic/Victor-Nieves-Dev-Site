@@ -57,6 +57,6 @@ If you have any questions, suggestions, or feedback regarding the Coding Quiz Ch
 - GitHub: PC-Vic https://github.com/PC-Vic/JavaScript-Quiz-app
 
 ## Link to app and GitHub
-https://pc-vic.github.io/Victor-Nieves-Dev-Site
+https://vicnieves.com
 
 https://github.com/PC-Vic/Victor-Nieves-Dev-Site 

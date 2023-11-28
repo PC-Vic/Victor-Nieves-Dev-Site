@@ -303,7 +303,7 @@ button:hover {
 /* iphone 14 Pro Max */
 @media (max-width: 430px) {
   .my-project-heading {
-    margin-top: 96px;
+    margin-top: 64px;
     padding-top: 104px;
     margin-bottom: 16px;
     margin-left: 2px;
@@ -326,7 +326,7 @@ button:hover {
   .project-title {
     font-size: 1.7rem;
     opacity: 1;
-    text-shadow: 0 0 10px  rgb(19, 19, 173);
+    text-shadow: 0 0 10px  rgb(34, 34, 227);
   }
 }
 
