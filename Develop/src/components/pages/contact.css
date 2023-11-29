@@ -1,12 +1,13 @@
   /* Contact page */
+  h2 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 10px;
+  }
+  
   .contact-container {
     max-width: 1020px;
     margin: auto;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 1.7em;
   }
   
   .form-group {
@@ -51,3 +52,25 @@
   button:hover {
     background-color: #3a88db;
   }
+
+  /* Small mobile devices */
+  @media (max-width: 812px) {
+  .contact-container {
+    max-width: 1020px;
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+
+/* Small iphone devices*/
+@media (max-width: 635px) {
+  .my-project-heading {
+    margin-top: 100px;
+    padding-top: 104px;
+    margin-left: 10px;
+  }
+  .contact-container {
+    /* width: 800px; */
+  }
+
+}
