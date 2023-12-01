@@ -1,5 +1,5 @@
   /* Contact page */
-  h2 {
+  #contact-heading {
     text-align: center;
     font-size: 1.8em;
     padding-bottom: 10px;
@@ -70,12 +70,12 @@
 
 /* iphone 14 Pro Max */
 @media (max-width: 430px) {
-  h2 {
+  #contact-heading {
     display: flex;
     justify-content: center;
-    margin-left: 60px;
-    font-size: 1.8em;
-    padding-bottom: 24px;
+    margin-left: 56px;
+    font-size: 1.5em;
+    padding-bottom: 12px;
     width: 224px;
   }
   .contact-container {
@@ -84,41 +84,35 @@
     margin-left: 56px;
   }
   .form-group {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
   }
   
   label {
     display: block;
-    margin-bottom: 13.6px;
+    margin-bottom: 6px;
     font-size: 1.2em;
   }
   
   input,
   textarea {
     width: 316px;
-    padding: 14px;
-    margin-bottom: 14px;
+    padding: 6px;
+    margin-bottom: 8px;
   }
   
   textarea {
-    height: 204px;
+    height: 164px;
   }
   
-  button {
+  #contact-button {
     background-color: rgb(54, 54, 228);
     color: #fff;
-    padding: 8px;
-    width: 124px;
+    padding: 6px;
+    width: 120px;
     border: none;
     cursor: pointer;
-    border-radius: 8px;
-    font-size: 1.5em;
-    display: block;
-    margin: 0 auto;
-    margin-left: 92px;
-  }
-  
-  button:hover {
-    background-color: #3a88db;
+    margin-top: -2px;
+    margin-left: 96px;
+    font-size: 1.2rem;
   }
 }

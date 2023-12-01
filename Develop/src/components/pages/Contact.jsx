@@ -93,7 +93,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <h2>Get in touch!</h2>
+      <h2 id='contact-heading'>Get in touch!</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -134,7 +134,7 @@ const Contact = () => {
           />
           {errors.message && <span className="error-message">{errors.message}</span>}
         </div>
-        <button type="submit">Submit</button>
+        <button id="contact-button" type="submit">Submit</button>
       </form>
     </div>
   );
