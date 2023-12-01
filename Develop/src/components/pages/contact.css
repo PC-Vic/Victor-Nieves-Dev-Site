@@ -64,13 +64,61 @@
 
 /* Small iphone devices*/
 @media (max-width: 635px) {
-  .my-project-heading {
-    margin-top: 100px;
-    padding-top: 104px;
-    margin-left: 10px;
+  .contact-container {
+  }
+}
+
+/* iphone 14 Pro Max */
+@media (max-width: 430px) {
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    font-size: 1.8em;
+    padding-bottom: 24px;
+    width: 224px;
   }
   .contact-container {
-    /* width: 800px; */
+    max-width:200px;
+    margin-top: 124px;
+    margin-left: 56px;
   }
-
+  .form-group {
+    margin-bottom: 34px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 13.6px;
+    font-size: 1.2em;
+  }
+  
+  input,
+  textarea {
+    width: 316px;
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+  
+  textarea {
+    height: 204px;
+  }
+  
+  button {
+    background-color: rgb(54, 54, 228);
+    color: #fff;
+    padding: 8px;
+    width: 124px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 auto;
+    margin-left: 92px;
+  }
+  
+  button:hover {
+    background-color: #3a88db;
+  }
 }
