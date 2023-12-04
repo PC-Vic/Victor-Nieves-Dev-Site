@@ -74,6 +74,7 @@
   }
 }
 
+/* 13 inch Macbook Pro */
 @media (max-width: 1440px) {
   .about-me-heading {
     margin-right: 200px;
@@ -99,34 +100,50 @@
   
   @media (max-width: 1024px) {
     .about-me-heading {
-      /* font-size: 2.5rem; */
       margin-bottom: 100px;
-      width: 80vw;
-      height: 14vh;
+      width: 40vw;
+      height: 4vh;
     }
     .about-container {
-      width: 40vw;
+      width: 60vw;
       height: 10vh;
+      margin-bottom: 50px;
+    }
+    .tech-skills-image {
+      display: none;
     }
   }
+
+  /* iPad Pro 10 */
+@media (max-width: 834px) {
+    .about-me-heading {
+      margin-left: 180px;
+      width: 40vw;
+      height: 4vh;
+    }
+    .about-container {
+      width: 60vw;
+      height: 10vh;
+      margin-bottom: 50px;
+      margin-left: 50px;
+    }
+  }
+
+
   
     /* About Mobile Devices */
     @media (max-width: 480px) {
       .about-me-heading {
-        font-size: 1.8rem;
-        /* margin-left: 24px; */
-        margin-top: 148px;
-        animation: none;
-        width: 100vw;
+        margin-left: 110px;
+        margin-top: 140px;
+        margin-bottom: 16px;
+        width: 60vw;
+        height: 20vh;
       }
       .about-container {
-        font-size: 5px;
-        margin-left: 2px;
-        margin-top: -180px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         width: 80vw;
-        height: 20vh;
+        height: 10vh;
+        margin-bottom: 50px;
+        margin-left: 4px;
       }
     }
