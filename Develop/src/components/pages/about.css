@@ -2,9 +2,9 @@
 .about-me-heading {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     text-align: center;
-    margin-right: 72px;
+    margin-left: 240px;
     animation: bounce;
     animation-duration: 2s;
     width: auto;
@@ -20,14 +20,25 @@
     height: 200px;
     align-items: center;
     margin-left: 440px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     justify-content: space-between;
     padding-top: 12px;
 } 
 
 .about-container p {
   font-size: 1.5rem;
+  text-align: center;
 } 
+
+.tech-skills-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1300px;
+  margin-left: 164px;
+  margin-top: 20px;
+}
 
 /* Media Queries */
 /* About large screens */
@@ -41,6 +52,42 @@
 }
 
 /* About medium screens */
+@media (max-width: 1680px) {
+  .about-me-heading {
+    margin-right: 200px;
+  }
+  .about-container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1600px) {
+  .about-me-heading {
+    margin-right: 100px;
+  }
+  .about-container {
+    margin-left: 300px;
+  }
+  .tech-skills-image {
+    margin-left: 100px;
+    width: 75vw;
+  }
+}
+
+@media (max-width: 1440px) {
+  .about-me-heading {
+    margin-right: 200px;
+  }
+  .about-container {
+    margin-left: 200px;
+  }
+  .tech-skills-image {
+    margin-left: 100px;
+    width: 75vw;
+  }
+}
+
+
 @media (max-width: 1200px) {
     .about-me-heading {
       margin-right: 400px;
