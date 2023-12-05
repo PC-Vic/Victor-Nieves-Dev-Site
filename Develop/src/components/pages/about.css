@@ -129,8 +129,6 @@
     }
   }
 
-
-  
     /* About Mobile Devices */
     @media (max-width: 480px) {
       .about-me-heading {
@@ -139,6 +137,7 @@
         margin-bottom: 16px;
         width: 60vw;
         height: 20vh;
+        animation: none;
       }
       .about-container {
         width: 80vw;
@@ -147,3 +146,47 @@
         margin-left: 4px;
       }
     }
+
+      /* iPhone 14 Pro Max*/
+      @media (max-width: 430px) {
+        .about-me-heading {
+          margin-left: 90px;
+          margin-top: 140px;
+          margin-bottom: 0px;
+          font-size: 2rem;
+          width: 60vw;
+          height: 20vh;
+        }
+        .about-container {
+          width: 80vw;
+          height: 10vh;
+          margin-top: -12px;
+          margin-bottom: 50px;
+          margin-left: -4px;
+        }
+        .about-container p {
+          font-size: 1.4rem;
+        }
+      }
+
+        /* iPhone 12 Pro */
+        @media (max-width: 390px) {
+          .about-me-heading {
+            margin-left: 80px;
+            margin-top: 140px;
+            margin-bottom: 0px;
+            font-size: 1.8rem;
+            width: 60vw;
+            height: 20vh;
+          }
+          .about-container {
+            width: 80vw;
+            height: 10vh;
+            margin-top: -40px;
+            margin-bottom: 50px;
+            margin-left: -10px;
+          }
+          .about-container p {
+            font-size: 1.2rem;
+          }
+        }
