@@ -6,6 +6,7 @@ import './HamburgerMenu.css';
 
 const HamburgerMenu = () => {
   const gitHubLink = "https://github.com/PC-Vic";
+  const linkedInLink = "https://www.linkedin.com/in/victor-nieves-8618592a3/";
   const [isOpen, setIsOpen] = useState(false);
 
   // Function to toggle the menu
@@ -28,7 +29,7 @@ const HamburgerMenu = () => {
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
         <a href={gitHubLink} target="_blank">Github</a>
-        <a href="#">LinkedIn</a>
+        <a href={linkedInLink} target='_blank'>LinkedIn</a>
       </div>
     </div>
   );

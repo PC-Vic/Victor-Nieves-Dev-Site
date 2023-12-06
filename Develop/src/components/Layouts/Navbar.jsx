@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const gitHubLink = "https://github.com/PC-Vic";
+    const linkedInLink = "https://www.linkedin.com/in/victor-nieves-8618592a3/";
     const navigate = useNavigate()
 
     return (
@@ -24,9 +25,9 @@ const Navbar = () => {
                 <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} />
                 </a>    
-                <Link>
+                <a href={linkedInLink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
+                </a>
             </div>
         </nav>
     );
