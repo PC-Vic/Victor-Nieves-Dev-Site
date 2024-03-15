@@ -1,6 +1,6 @@
 import React from 'react';
 import quizImage from '../../assets/classroom-unsplash.jpg';
-import dishImage from '../../assets/Dish-Dash-image-maarten-van-den-heuve.jpg';
+import dishImage from '../../assets/law.png';
 import calorieImage from '../../assets/dietpic.png';
 import pixelImage from '../../assets/pixelMarketImage.png'
 
@@ -8,7 +8,7 @@ import pixelImage from '../../assets/pixelMarketImage.png'
 const Projects = () => {
  
   const projectsData = [
-    { id: 1, title: 'Dish Dash', image: dishImage, dishLink: 'https://brennysouza.github.io/dish-dash/' },
+    { id: 1, title: 'Law Firm Website', image: dishImage, dishLink: 'https://pc-vic.github.io/Law-firm-site/' },
     { id: 2, title: 'Calorie Quest', image: calorieImage, calorieQuestLink: 'https://calorie-quest-87555c29dfe4.herokuapp.com/' },
     { id: 3, title: 'E-Commerce API', image: pixelImage, pixelMarketLink: 'https://drive.google.com/file/d/1T938A97pL9xfBJQtZ0wezvkWoU9in8bF/view' },
     { id: 4, title: 'JavaScript Quiz', image: quizImage, quizLink: 'https://pc-vic.github.io/JavaScript-Quiz-app/' },
