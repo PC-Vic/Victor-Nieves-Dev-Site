@@ -13,22 +13,24 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <img onClick={() => {navigate('/')}} src={Logo} alt="logo" className="logo" />
-            <div className="sidebar-links">
-            <Link to="/" className="home-link">HOME</Link>
-                <Link to="/about" className="home-link">ABOUT</Link>
-                <Link to="/projects" className="forum-link">PROJECTS</Link>
-                <Link to="/contact" className="users-link">CONTACT</Link>
-            </div>
+            {/* <div className="navbar-container"> */}
+                <img onClick={() => {navigate('/')}} src={Logo} alt="logo" className="logo" />
+                <div className="sidebar-links">
+                <Link to="/" className="home-link">HOME</Link>
+                    <Link to="/about" className="home-link">ABOUT</Link>
+                    <Link to="/projects" className="forum-link">PROJECTS</Link>
+                    <Link to="/contact" className="users-link">CONTACT</Link>
+                </div>
 
-            <div className='nav-icons-container'>
-                <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-                </a>    
-                <a href={linkedInLink} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-            </div>
+                <div className='nav-icons-container'>
+                    <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                    </a>    
+                    <a href={linkedInLink} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                </div>
+            {/* </div> */}
         </nav>
     );
 }
